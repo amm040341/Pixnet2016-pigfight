@@ -1,6 +1,8 @@
 <html>
 <header>
 <link rel=stylesheet type="text/css" href="main.css">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWSAImRXejAli-yp9vUlo3LhcsBNezx_Q"></script>
+<script src="Location.js"></script>
 </header>
 
 <body>
@@ -19,6 +21,7 @@
 		<button type="button">SEARCH</button>
 		<a href="login.html"><button type="button">Login</button></a>
 		<a href="register.html"><button type="button">Register</button></a>
+		<button type="button" onclick="getLocation()">Location</button>
 	</form>
 	
 </div>
@@ -36,5 +39,45 @@
 	<h1>google map</h1>
 </div>
 
+
+<!--<script >
+//var x=document.getElementById("demo");
+function getLocation()
+  {
+  if (navigator.geolocation)
+    {
+    navigator.geolocation.getCurrentPosition(showPosition);
+    }
+  else{x.innerHTML="Geolocation is not supported by this browser.";}
+  }
+  //獲取目前位置
+function showPosition(position)
+  {
+  var lat,lng;
+  lat = position.coords.latitude;
+  lng = position.coords.longitude;
+  /*x.innerHTML="Latitude: " + lat + 
+  "<br />Longitude: " + lng;*/
+  initialize(lat,lng)  
+  }
+  function initialize(latitude,longitude) {
+        var myLatlng = new google.maps.LatLng(latitude,longitude);
+        var mapOptions = {
+          center: { lat: latitude, lng: longitude},
+          zoom: 15
+        };
+		//地圖設定
+        var map = new google.maps.Map(
+            document.getElementById('googlemap'),
+            mapOptions);
+		//畫出map
+		var marker = new google.maps.Marker({
+            position: myLatlng,
+            title:"目前位置"
+            });
+		//標記地點
+		marker.setMap(map);		
+      }
+</script>-->
 </body>
 </html>
