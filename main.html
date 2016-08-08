@@ -1,5 +1,9 @@
 <html>
 <header>
+
+<!-- Jquery函式庫 -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 <link rel=stylesheet type="text/css" href="main.css">
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWSAImRXejAli-yp9vUlo3LhcsBNezx_Q"></script>
 <script src="Location.js"></script>
@@ -26,8 +30,119 @@
 	
 </div>
 
+
+
+<!-- 文章修改 -->
 <div id="article">
-	<h1>article</h1>
+  <!-- article_block是底部方塊，URL是網站連結，img是圖片，transparent是透明遮罩，title是title -->
+  <div id="article_block"><a id="URL0" target="_blank"><img id="img0"  height="260" src=""><div id="transparent"><div id="title0"></div></div></a></div>
+
+  <div id="article_block"><a id="URL1" target="_blank"><img id="img1"  height="260" src=""><div id="transparent"><div id="title1"></div></div></a></div>
+
+  <div id="article_block"><a id="URL2" target="_blank"><img id="img2"  height="260" src=""><div id="transparent"><div id="title2"></div></div></a></div>
+
+  <div id="article_block"><a id="URL3" target="_blank"><img id="img3"  height="260" src=""><div id="transparent"><div id="title3"></div></div></a></div>
+
+  <div id="article_block"><a id="URL4" target="_blank"><img id="img4"  height="260" src=""><div id="transparent"><div id="title4"></div></div></a></div>
+
+  <div id="article_block"><a id="URL5" target="_blank"><img id="img5"  height="260" src=""><div id="transparent"><div id="title5"></div></div></a></div>
+
+  <div id="article_block"><a id="URL6" target="_blank"><img id="img6"  height="260" src=""><div id="transparent"><div id="title6"></div></div></a></div>
+
+  <div id="article_block"><a id="URL7" target="_blank"><img id="img7"  height="260" src=""><div id="transparent"><div id="title7"></div></div></a></div>
+ 
+<!-- Json資料處理 ↓↓ -->
+  <script type="text/javascript">
+ 
+  //利用jquery裡的ajax方式，從API中取得json資料檔
+  $.ajax({
+    url: "https://emma.pixnet.cc/mainpage/blog/categories/hot/0?format=json&pretty_print=1&api_version=2&per_page=30",
+    data: $('#sentToBack').serialize(),
+    type:"GET",
+    dataType:'json',
+    success: function(callBack){
+      
+      //這裡註解的部分是參考資料。
+
+      //字串化我們所得到的JSON資料
+      //var dataStr = JSON.stringify(callBack,null,2);
+      //alert(callBack.articles[6].thumb);
+      //var dataObj = JSON.parse(back);  
+
+      //呼叫JSON檔裡單獨欄位
+      //alert(back.blog.name);
+      //document.write(callBack.articles[6].thumb);
+
+      //連結到對應的部落格
+      var urls = new Array();
+      for(i=0; i<8; i++)
+      {
+          urls[i] = callBack.articles[i].link;
+      }  
+      document.getElementById("URL0").href = urls[0];
+      document.getElementById("URL1").href = urls[1];
+      document.getElementById("URL2").href = urls[2];
+      document.getElementById("URL3").href = urls[3];
+      document.getElementById("URL4").href = urls[4];
+      document.getElementById("URL5").href = urls[5];
+      document.getElementById("URL6").href = urls[6];
+      document.getElementById("URL7").href = urls[7];
+
+      //透過json取得圖片，並顯示在html上
+      var thumb = new Array();
+      for(i=0; i<8; i++)
+      {
+          thumb[i] = callBack.articles[i].thumb;
+
+          //修改url 改變圖片大小使清晰
+		  var pic = thumb[i].split("zoomcrop/");
+		  if(pic.length>1)
+		  {
+		    pic[0] += "zoomcrop/200x200.png";
+			thumb[i] = pic[0];
+		  }
+		  else
+		  {
+		    pic = thumb[i].split("width=");
+			if(pic.length>1)
+			{
+			  pic[0] += "width=200&height=200";
+			  thumb[i] = pic[0];
+			}
+		  }	
+      }  
+      document.getElementById("img0").src = thumb[0];
+      document.getElementById("img1").src = thumb[1];
+      document.getElementById("img2").src = thumb[2];
+      document.getElementById("img3").src = thumb[3];
+      document.getElementById("img4").src = thumb[4];
+      document.getElementById("img5").src = thumb[5];
+      document.getElementById("img6").src = thumb[6];
+      document.getElementById("img7").src = thumb[7];
+
+      //透過json取得title，並顯示在html上
+      document.getElementById("title0").textContent = callBack.articles[0].title;
+      document.getElementById("title1").textContent = callBack.articles[1].title;
+      document.getElementById("title2").textContent = callBack.articles[2].title;
+      document.getElementById("title3").textContent = callBack.articles[3].title;
+      document.getElementById("title4").textContent = callBack.articles[4].title;
+      document.getElementById("title5").textContent = callBack.articles[5].title;
+      document.getElementById("title6").textContent = callBack.articles[6].title;
+      document.getElementById("title7").textContent = callBack.articles[7].title;
+
+    },
+    error:function(xhr, ajaxOptions, thrownError){ 
+        alert(xhr.status); 
+        alert(thrownError); 
+    } 
+});
+
+
+alert(callBack.articles[0].link);
+</script>
+<!-- ↑↑ -->
+
+
 </div>
 
 <div id="store">
@@ -43,8 +158,16 @@
 	<img src="ball.png" onClick="dialog(this);switchMenu(this,'collection')" onmousedown="grab(this)"></img>
 </div>
 	
-<div id="collection" style="display:none; width:300px; height:300px; background-image:url('menuback.png')">
+<div id="collection" style="display:none; width:300px; height:300px;  background-image:url('menuback.png')">
+    
     <h3 style="position:absolute; top:15px; left:25px;">收藏文章</h3>
+    <h4 id="myArticle"></h4>
+
+    <!-- 球球內文的Js資料! -->
+    <script type="text/javascript">
+    // 預計要放JS的地方，尚未完成。
+    </script>
+   
 </div>
 
 
@@ -101,6 +224,8 @@ function showPosition(position)
 		var openimg = 0;
 
 		var dragobj = null;
+
+
 
 		function falsefunc() { return false; } // used to block cascading events
 	
