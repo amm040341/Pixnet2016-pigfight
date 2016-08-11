@@ -42,7 +42,6 @@
 	position:absolute;
 	top:70px;
 	left:10px;
-
 }
 
 #article_block{
@@ -79,14 +78,45 @@
 }
 
 #store{
-	background-color:#DDFF77;
+	/*background-color:#DDFF77;*/
+	background-image: url('bgimg.png');
 	width: 485px;
 	height: 250px;
 	position:absolute;
 	top:70px;
 	left:870px;
+	text-align:center;
 
 }
+
+#storeBoard{
+	width: 485px;
+	height: 250px;
+	position:relative;
+}
+
+#store_food_block{
+	
+	border-style: solid;
+	text-align:center;
+	border-width:2px; 
+	border-color:rgb(169,252,241);
+	width: 440px;
+	height: 30px;
+	position:relative;
+	font-size:20px;
+	font-weight: 800;
+	padding-top:10px; 
+  	padding-left:10px; 
+  	padding-right:10px; 
+  	padding-bottom:10px; 
+	
+	margin-bottom: 10px;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
 
 #googlemap{
 	background-color:#FFA488;
@@ -95,23 +125,54 @@
 	position:absolute;
 	top:330px;
 	left:870px;
-
 }
 
 #myArticle{
-	background-color:#CCFF99;
+/*	background-color:#CCFF99;*/
+	background-image: url('material3.png');
 	width: 257px;
-	height: 217px;
+	height: 210px;
 	position:absolute;
-	top:50px;
+	top:55px;
 	left:20px;
 	font-size:16px;
 	font-weight: 100;
 	font-family:Microsoft JhengHei;
 	letter-spacing:1px;
-	text-align:center;
+	/*text-align:center;*/
 	overflow:hidden;
 	float:left;
 	margin-right: 10px;
 	margin-top: 15px;
+}
+
+#myArticle_block{
+	
+	width: 250px;
+	height: 45px;
+	position:relative;
+	top:5px;
+	left:0px;
+	overflow:hidden;
+	/*white-space: nowrap;*/
+	text-overflow: ellipsis;
+}
+
+/*搜尋頁面*/
+#searchBase1{
+	/*background-color:#BBFFEE;*/
+	width: 850px;
+	height: 570px;
+	position:absolute;
+	top:70px;
+	left:10px;
+}
+
+#searchBase2{
+	/*background-color:#FFFF77;*/
+	width: 850px;
+	height: 570px;
+	position:absolute;
+	top:70px;
+	left:10px;
 }
