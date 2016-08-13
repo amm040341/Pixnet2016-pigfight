@@ -55,12 +55,17 @@
 			$("#searchBase2").slideUp('slow',0);
 			$("#article").fadeTo('normal',1);
 		}
+    function showStore1()
+    {
+      // 隱藏
+      $("#storeBoard").fadeTo('normal',1);
+    }
 		</script>
 		<!-- ↑↑ -->
 
 		<a href="member/index.php"><button type="button">Login</button></a>
 		<a href="member/member_join_form.php"><button type="button">Register</button></a>
-		<button type="button" onclick="getLocation()">Location</button>
+		<button type="button" onclick="showStore1(); getLocation(); ">Location</button>
 		<button type="button" onclick='showHot()'>Hot</button>
 	</form>
 	
@@ -249,8 +254,8 @@ $.ajax({
 <div id="store">
 	<h2>  美食天地</h2>
 	
-	<!-- <div id="storeBoard" style='display:none'> -->
-	<div id="storeBoard">
+	<div id="storeBoard" style='display:none'>
+	<!-- <div id="storeBoard"> -->
 	<!-- 華山附近美食文章(寫死) -->
 		<div id="store_food_block"><a href="http://elsa30.pixnet.net/blog/post/43364422" target="_blank">【華山文創園區美食】小器食堂@日系簡約風格、口味清爽日式套餐！</a></div>
 		<div id="store_food_block"><a href="http://milktea721.pixnet.net/blog/post/29572503" target="_blank">[台北] AlleyCat's Pizza@華山1914文創園區</a></div>
