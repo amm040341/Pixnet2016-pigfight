@@ -200,46 +200,61 @@ $.ajax({
 <!-- 輸入彩妝 得到屈臣氏 -->
 <div id="searchBase1" style='display:none' >
 
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/205205788" target="_blank"><img src="picture/picA1.png"  height="260" src=""><div id="transparent">[彩妝] 開箱屈臣氏購入line版Missha彩妝！</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/83873193" target="_blank"><img src="picture/picA2.png"  height="260" src=""><div id="transparent"> [彩妝] 只搶到1盒驚呆了!! 日本藥妝店超夯美妝VISEE進軍台灣屈臣氏摟</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/83873316" target="_blank"><img src="picture/picA3.png"  height="260" src=""><div id="transparent"> 【彩妝】美少女戰士20周年限量化妝品：防水眼線液筆太可愛了</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/83873607" target="_blank"><img src="picture/picA4.png"  height="260" src=""><div id="transparent"> 【彩妝】VISEE又回台灣囉!❤台灣上市新品VS日本限量商品</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/83873304" target="_blank"><img src="picture/picA5.png"  height="260" src=""><div id="transparent"> 【彩妝】Visee晶緞光漾眼影盒PK-2,PK3/CP值高，不輸專櫃的飽和顯色，最後一天77折</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/187927828" target="_blank"><img src="picture/picA6.png"  height="260" src=""><div id="transparent"> 【彩妝*】百變女孩。Monday to Friday Color Lips。上班日的唇色變化 #NH CC水亮絲緞豐唇筆</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/202265119" target="_blank"><img src="picture/picA7.png"  height="260" src=""><div id="transparent"> |美妝影音|屈臣氏小小戰利品＋ CLIO 光撩鏡感絲緞唇釉試色分享#05輕甜野莓  #06石英玫粉</div></a></div>	
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/201590665" target="_blank"><img src="picture/picA8.png"  height="260" src=""><div id="transparent"> （彩妝）MJ戀愛魔鏡－櫻花限定版：睫毛膏＋眼線液試色</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/205205788" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><img src="picture/picA1.png"  height="260" src=""><div id="transparent">[彩妝] 開箱屈臣氏購入line版Missha彩妝！</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/83873193" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><img src="picture/picA2.png"  height="260" src=""><div id="transparent"> [彩妝] 只搶到1盒驚呆了!! 日本藥妝店超夯美妝VISEE進軍台灣屈臣氏摟</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/83873316" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><img src="picture/picA3.png"  height="260" src=""><div id="transparent"> 【彩妝】美少女戰士20周年限量化妝品：防水眼線液筆太可愛了</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/83873607" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><img src="picture/picA4.png"  height="260" src=""><div id="transparent"> 【彩妝】VISEE又回台灣囉!❤台灣上市新品VS日本限量商品</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/83873304" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><img src="picture/picA5.png"  height="260" src=""><div id="transparent"> 【彩妝】Visee晶緞光漾眼影盒PK-2,PK3/CP值高，不輸專櫃的飽和顯色，最後一天77折</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/187927828" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><img src="picture/picA6.png"  height="260" src=""><div id="transparent"> 【彩妝*】百變女孩。Monday to Friday Color Lips。上班日的唇色變化 #NH CC水亮絲緞豐唇筆</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/202265119" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><img src="picture/picA7.png"  height="260" src=""><div id="transparent"> |美妝影音|屈臣氏小小戰利品＋ CLIO 光撩鏡感絲緞唇釉試色分享#05輕甜野莓  #06石英玫粉</div></a></div>	
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/201590665" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="LovButton2" ><img src="picture/picA8.png"  height="260" src=""><div id="transparent"> （彩妝）MJ戀愛魔鏡－櫻花限定版：睫毛膏＋眼線液試色</div></a></div>
 
 </div>
 
 <!-- 輸入氣墊粉餅 得到innisfree -->
 <div id="searchBase2" style='display:none'>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/202104541" target="_blank"><img src="picture/picB1.png"  height="260" src=""><div id="transparent"> 【底妝】韓國innisfree WATER GLOW CUSHION水感光透氣墊粉餅開箱實測心得!!</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/199696888" target="_blank"><img src="picture/picB2.png"  height="260" src=""><div id="transparent"> 底妝│超夯! 8款熱門氣墊粉餅大評比。</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/198006040" target="_blank"><img src="picture/picB3.png"  height="260" src=""><div id="transparent"> Maybelline 媚比琳純淨礦物水凝BB氣墊粉餅使用心得</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/199286371" target="_blank"><img src="picture/picB4.png"  height="260" src=""><div id="transparent"> 四款氣墊粉餅推薦-IOPE、innisfree、MISSHA、Lancôme</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/193010137" target="_blank"><img src="picture/picB5.png"  height="260" src=""><div id="transparent"> 可愛到大爆炸!!!innisfree X LINE Friends 聯名氣墊粉餅上市。詳細規則及購買方式</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/199704730" target="_blank"><img src="picture/picB6.png"  height="260" src=""><div id="transparent"> [美妝]Innisfree 全球唯一霧感氣墊粉餅 打造12小時霧感持久妝容!! innisfree  LINE FRIENDS聯名，LINE迷必敗!!</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/products/1330" target="_blank"><img src="picture/picB7.png"  height="260" src=""><div id="transparent">innisfree 霧感持妝舒芙蕾粉餅</div></a></div>
-	<div id="article_block"><a href="https://styleme.pixnet.net/post/198620989" target="_blank"><img src="picture/picB8.png"  height="260" src=""><div id="transparent">很實用！這7個氣墊粉餅的蕊芯和外盒Size都通用。想裝什麼就裝什麼</div></a></div>		
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/202104541" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><img src="picture/picB1.png"  height="260" src=""><div id="transparent"> 【底妝】韓國innisfree WATER GLOW CUSHION水感光透氣墊粉餅開箱實測心得!!</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/199696888" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" ><input type="image" class="button" src="locate.png"  alt="submit" id="LovButton2" ><img src="picture/picB2.png"  height="260" src=""><div id="transparent"> 底妝│超夯! 8款熱門氣墊粉餅大評比。</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/198006040" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><img src="picture/picB3.png"  height="260" src=""><div id="transparent"> Maybelline 媚比琳純淨礦物水凝BB氣墊粉餅使用心得</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/199286371" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><img src="picture/picB4.png"  height="260" src=""><div id="transparent"> 四款氣墊粉餅推薦-IOPE、innisfree、MISSHA、Lancôme</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/193010137" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><img src="picture/picB5.png"  height="260" src=""><div id="transparent"> 可愛到大爆炸!!!innisfree X LINE Friends 聯名氣墊粉餅上市。詳細規則及購買方式</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/199704730" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" ><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><img src="picture/picB6.png"  height="260" src=""><div id="transparent"> [美妝]Innisfree 全球唯一霧感氣墊粉餅 打造12小時霧感持久妝容!! innisfree  LINE FRIENDS聯名，LINE迷必敗!!</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/products/1330" target="_blank">  	<input type="image" class="button" src="locate.png"  alt="submit" id="LovButton2" ><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><img src="picture/picB7.png"  height="260" src=""><div id="transparent">innisfree 霧感持妝舒芙蕾粉餅</div></a></div>
+	<div id="article_block"><a href="https://styleme.pixnet.net/post/198620989" target="_blank"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><img src="picture/picB8.png"  height="260" src=""><div id="transparent">很實用！這7個氣墊粉餅的蕊芯和外盒Size都通用。想裝什麼就裝什麼</div></a></div>		
 </div>
 
 
 <div id="store">
 	<h2>  美食天地</h2>
 	
-	<div id="storeBoard" style='display:none'>
-	<!-- <div id="storeBoard"> -->
+	<!-- <div id="storeBoard" style='display:none'> -->
+	<div id="storeBoard">
 	<!-- 華山附近美食文章(寫死) -->
-		<div id="store_food_block"><a href="http://elsa30.pixnet.net/blog/post/43364422" >【華山文創園區美食】小器食堂@日系簡約風格、口味清爽日式套餐！</a></div>
-		<div id="store_food_block"><a href="http://milktea721.pixnet.net/blog/post/29572503" >[台北] AlleyCat's Pizza@華山1914文創園區</a></div>
-		<div id="store_food_block"><a href="http://ycy820108.pixnet.net/blog/post/298035689" >美食 [捷運忠孝新生站] 隱藏巷弄日式厚鬆餅，還能紅茶無限續 東京紅茶</a></div>
+		<div id="store_food_block"><a href="http://elsa30.pixnet.net/blog/post/43364422" target="_blank">【華山文創園區美食】小器食堂@日系簡約風格、口味清爽日式套餐！</a></div>
+		<div id="store_food_block"><a href="http://milktea721.pixnet.net/blog/post/29572503" target="_blank">[台北] AlleyCat's Pizza@華山1914文創園區</a></div>
+		<div id="store_food_block"><a href="http://ycy820108.pixnet.net/blog/post/298035689" target="_blank">美食 [捷運忠孝新生站] 隱藏巷弄日式厚鬆餅，還能紅茶無限續 東京紅茶</a></div>
 	</div>
 
 </div>
 
 
 <div id="googlemap">
-	<h1>google map</h1>
 	
 </div>
 
@@ -279,45 +294,6 @@ $.ajax({
 </div>
 
 
-<!-- <script >
-var x=document.getElementById("demo");
-function getLocation()
-  {
-  if (navigator.geolocation)
-    {
-    navigator.geolocation.getCurrentPosition(showPosition);
-    }
-  else{x.innerHTML="Geolocation is not supported by this browser.";}
-  }
-  //獲取目前位置
-function showPosition(position)
-  {
-  var lat,lng;
-  lat = position.coords.latitude;
-  lng = position.coords.longitude;
-  x.innerHTML="Latitude: " + lat + 
-  "<br />Longitude: " + lng;
-  initialize(lat,lng)  
-  }
-  function initialize(latitude,longitude) {
-        var myLatlng = new google.maps.LatLng(latitude,longitude);
-        var mapOptions = {
-          center: { lat: latitude, lng: longitude},
-          zoom: 15
-        };
-		//地圖設定
-        var map = new google.maps.Map(
-            document.getElementById('googlemap'),
-            mapOptions);
-		//畫出map
-		var marker = new google.maps.Marker({
-            position: myLatlng,
-            title:"目前位置"
-            });
-		//標記地點
-		marker.setMap(map);		
-      }
- </script>-->
 
 <script type="text/javascript"><!--寶貝球js code-->
 		var mousex = 0;

@@ -97,10 +97,10 @@
 
 #store_food_block{
 	
-	border-style: solid;
+	/*border-style: solid;*/
 	text-align:center;
-	border-width:2px; 
-	border-color:rgb(169,252,241);
+	/*border-width:2px; 
+	border-color:rgb(169,252,241);*/
 	width: 440px;
 	height: 30px;
 	position:relative;
@@ -187,6 +187,20 @@
 }
 
 #LovButton2{
+	position:absolute;
+	left:155px;
+	width:40px;
+	margin-top: 3px;
+}
+
+#CButton{
+	position:absolute;
+	left:155px;
+	width:40px;
+	margin-top: 3px;
+}
+
+#IButton{
 	position:absolute;
 	left:155px;
 	width:40px;
