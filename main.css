@@ -131,9 +131,9 @@
 /*	background-color:#CCFF99;*/
 	background-image: url('material3.png');
 	width: 257px;
-	height: 210px;
-	position:absolute;
-	top:55px;
+	height: 250px;
+	position:relative;
+	top:7px;
 	left:20px;
 	font-size:16px;
 	font-weight: 100;
@@ -149,13 +149,15 @@
 #myArticle_block{
 	
 	width: 250px;
-	height: 45px;
+	height: 50px;
 	position:relative;
 	top:5px;
 	left:0px;
 	overflow:hidden;
 	/*white-space: nowrap;*/
 	text-overflow: ellipsis;
+	text-align:center;
+	line-height:50px;
 }
 
 /*搜尋頁面*/
@@ -175,4 +177,18 @@
 	position:absolute;
 	top:70px;
 	left:10px;
+}
+
+#LovButton1{
+	position:absolute;
+	left:120px;
+	width:40px;
+	margin-top: 3px;
+}
+
+#LovButton2{
+	position:absolute;
+	left:155px;
+	width:40px;
+	margin-top: 3px;
 }
