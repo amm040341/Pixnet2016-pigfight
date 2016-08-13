@@ -76,7 +76,7 @@
 <div id="article">
   <!-- article_block是底部方塊，URL是網站連結，img是圖片，transparent是透明遮罩，title是title -->
   <div id="article_block">
-  	<input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  	<input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
   	<a id="URL0" target="_blank">
   		<img id="img0"  height="260" src="">
   		<div id="transparent">
@@ -86,25 +86,25 @@
   	</a>
   </div>
   <!-- 上面是下面這邊的拆開解析 -->
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
   	<a id="URL1" target="_blank"><img id="img1"  height="260" src=""><div id="transparent"><div id="title1"></div></div></a></div>
 
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
   	<a id="URL2" target="_blank"><img id="img2"  height="260" src=""><div id="transparent"><div id="title2"></div></div></a></div>
 
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
   	<a id="URL3" target="_blank"><img id="img3"  height="260" src=""><div id="transparent"><div id="title3"></div></div></a></div>
 
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
   	<a id="URL4" target="_blank"><img id="img4"  height="260" src=""><div id="transparent"><div id="title4"></div></div></a></div>
 
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
   	<a id="URL5" target="_blank"><img id="img5"  height="260" src=""><div id="transparent"><div id="title5"></div></div></a></div>
 
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
   	<a id="URL6" target="_blank"><img id="img6"  height="260" src=""><div id="transparent"><div id="title6"></div></div></a></div>
 
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
   	<a id="URL7" target="_blank"><img id="img7"  height="260" src=""><div id="transparent"><div id="title7"></div></div></a></div>
 <!-- Json資料處理 ↓↓ -->
 <script type="text/javascript">
@@ -192,7 +192,21 @@ $.ajax({
 });
 
   //利用jquery裡的ajax方式，把要加入「收藏文章」的文章傳送到資料庫內。
-  
+  // $(document).ready(function() {
+  //   $(".button").click(function() {
+  //       $.ajax({
+  //           type: "POST",
+  //           url: "connLovePHP.php",
+  //           data: "{id:"", title="", link=""}",
+  //           success: function(data) {
+  //               //alert("Hey yo what's up!");
+  //           },
+  //           error: function(jqXHR) {
+  //               alert("發生錯誤: " + jqXHR.status);
+  //           }
+  //       })
+  //   })
+  // });
 
 
 </script>
@@ -204,50 +218,50 @@ $.ajax({
 <!-- 輸入彩妝 得到屈臣氏 -->
 <div id="searchBase1" style='display:none' >
 
-	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><a href="https://styleme.pixnet.net/post/205205788" target="_blank"><img src="picture/picA1.png"  height="260" src=""><div id="transparent">[彩妝] 開箱屈臣氏購入line版Missha彩妝！</div></a></div>
-	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><a href="https://styleme.pixnet.net/post/83873193" target="_blank"><img src="picture/picA2.png"  height="260" src=""><div id="transparent"> [彩妝] 只搶到1盒驚呆了!! 日本藥妝店超夯美妝VISEE進軍台灣屈臣氏摟</div></a></div>
-	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><a href="https://styleme.pixnet.net/post/83873316" target="_blank"><img src="picture/picA3.png"  height="260" src=""><div id="transparent"> 【彩妝】美少女戰士20周年限量化妝品：防水眼線液筆太可愛了</div></a></div>
-	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><a href="https://styleme.pixnet.net/post/83873607" target="_blank"><img src="picture/picA4.png"  height="260" src=""><div id="transparent"> 【彩妝】VISEE又回台灣囉!❤台灣上市新品VS日本限量商品</div></a></div>
-	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><a href="https://styleme.pixnet.net/post/83873304" target="_blank"><img src="picture/picA5.png"  height="260" src=""><div id="transparent"> 【彩妝】Visee晶緞光漾眼影盒PK-2,PK3/CP值高，不輸專櫃的飽和顯色，最後一天77折</div></a></div>
-	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><a href="https://styleme.pixnet.net/post/187927828" target="_blank"><img src="picture/picA6.png"  height="260" src=""><div id="transparent"> 【彩妝*】百變女孩。Monday to Friday Color Lips。上班日的唇色變化 #NH CC水亮絲緞豐唇筆</div></a></div>
-	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><a href="https://styleme.pixnet.net/post/202265119" target="_blank"><img src="picture/picA7.png"  height="260" src=""><div id="transparent"> |美妝影音|屈臣氏小小戰利品＋ CLIO 光撩鏡感絲緞唇釉試色分享#05輕甜野莓  #06石英玫粉</div></a></div>	
-	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" ><a href="https://styleme.pixnet.net/post/201590665" target="_blank"><img src="picture/picA8.png"  height="260" src=""><div id="transparent"> （彩妝）MJ戀愛魔鏡－櫻花限定版：睫毛膏＋眼線液試色</div></a></div>
+	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" onClick ="cClick()"><a href="https://styleme.pixnet.net/post/205205788" target="_blank"><img src="picture/picA1.png"  height="260" src=""><div id="transparent">[彩妝] 開箱屈臣氏購入line版Missha彩妝！</div></a></div>
+	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" onClick ="cClick()"><a href="https://styleme.pixnet.net/post/83873193" target="_blank"><img src="picture/picA2.png"  height="260" src=""><div id="transparent"> [彩妝] 只搶到1盒驚呆了!! 日本藥妝店超夯美妝VISEE進軍台灣屈臣氏摟</div></a></div>
+	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" onClick ="cClick()"><a href="https://styleme.pixnet.net/post/83873316" target="_blank"><img src="picture/picA3.png"  height="260" src=""><div id="transparent"> 【彩妝】美少女戰士20周年限量化妝品：防水眼線液筆太可愛了</div></a></div>
+	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" onClick ="cClick()"><a href="https://styleme.pixnet.net/post/83873607" target="_blank"><img src="picture/picA4.png"  height="260" src=""><div id="transparent"> 【彩妝】VISEE又回台灣囉!❤台灣上市新品VS日本限量商品</div></a></div>
+	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" onClick ="cClick()"><a href="https://styleme.pixnet.net/post/83873304" target="_blank"><img src="picture/picA5.png"  height="260" src=""><div id="transparent"> 【彩妝】Visee晶緞光漾眼影盒PK-2,PK3/CP值高，不輸專櫃的飽和顯色，最後一天77折</div></a></div>
+	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" onClick ="cClick()"><a href="https://styleme.pixnet.net/post/187927828" target="_blank"><img src="picture/picA6.png"  height="260" src=""><div id="transparent"> 【彩妝*】百變女孩。Monday to Friday Color Lips。上班日的唇色變化 #NH CC水亮絲緞豐唇筆</div></a></div>
+	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" onClick ="cClick()"><a href="https://styleme.pixnet.net/post/202265119" target="_blank"><img src="picture/picA7.png"  height="260" src=""><div id="transparent"> |美妝影音|屈臣氏小小戰利品＋ CLIO 光撩鏡感絲緞唇釉試色分享#05輕甜野莓  #06石英玫粉</div></a></div>	
+	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="CButton" onClick ="cClick()"><a href="https://styleme.pixnet.net/post/201590665" target="_blank"><img src="picture/picA8.png"  height="260" src=""><div id="transparent"> （彩妝）MJ戀愛魔鏡－櫻花限定版：睫毛膏＋眼線液試色</div></a></div>
 
 </div>
 
 <!-- 輸入氣墊粉餅 得到innisfree -->
 <div id="searchBase2" style='display:none'>
-	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><a href="https://styleme.pixnet.net/post/202104541" target="_blank"><img src="picture/picB1.png"  height="260" src=""><div id="transparent"> 【底妝】韓國innisfree WATER GLOW CUSHION水感光透氣墊粉餅開箱實測心得!!</div></a></div>
+	<div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" onClick ="iClick()"><a href="https://styleme.pixnet.net/post/202104541" target="_blank"><img src="picture/picB1.png"  height="260" src=""><div id="transparent"> 【底妝】韓國innisfree WATER GLOW CUSHION水感光透氣墊粉餅開箱實測心得!!</div></a></div>
 	
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-    <input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><a href="https://styleme.pixnet.net/post/199696888" target="_blank"><img src="picture/picB2.png"  height="260" src=""><div id="transparent"> 底妝│超夯! 8款熱門氣墊粉餅大評比。</div></a></div>
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+    <input type="image" class="button" src="locate.png"  alt="submit" id="IButton" onClick ="iClick()"><a href="https://styleme.pixnet.net/post/199696888" target="_blank"><img src="picture/picB2.png"  height="260" src=""><div id="transparent"> 底妝│超夯! 8款熱門氣墊粉餅大評比。</div></a></div>
 	
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><a href="https://styleme.pixnet.net/post/198006040" target="_blank"><img src="picture/picB3.png"  height="260" src=""><div id="transparent"> Maybelline 媚比琳純淨礦物水凝BB氣墊粉餅使用心得</div></a></div>
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" onClick ="iClick()"><a href="https://styleme.pixnet.net/post/198006040" target="_blank"><img src="picture/picB3.png"  height="260" src=""><div id="transparent"> Maybelline 媚比琳純淨礦物水凝BB氣墊粉餅使用心得</div></a></div>
 	
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><a href="https://styleme.pixnet.net/post/199286371" target="_blank"><img src="picture/picB4.png"  height="260" src=""><div id="transparent"> 四款氣墊粉餅推薦-IOPE、innisfree、MISSHA、Lancôme</div></a></div>
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" onClick ="iClick()"><a href="https://styleme.pixnet.net/post/199286371" target="_blank"><img src="picture/picB4.png"  height="260" src=""><div id="transparent"> 四款氣墊粉餅推薦-IOPE、innisfree、MISSHA、Lancôme</div></a></div>
 	
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><a href="https://styleme.pixnet.net/post/193010137" target="_blank"><img src="picture/picB5.png"  height="260" src=""><div id="transparent"> 可愛到大爆炸!!!innisfree X LINE Friends 聯名氣墊粉餅上市。詳細規則及購買方式</div></a></div>
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" onClick ="iClick()"><a href="https://styleme.pixnet.net/post/193010137" target="_blank"><img src="picture/picB5.png"  height="260" src=""><div id="transparent"> 可愛到大爆炸!!!innisfree X LINE Friends 聯名氣墊粉餅上市。詳細規則及購買方式</div></a></div>
 	
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><a href="https://styleme.pixnet.net/post/199704730" target="_blank"><img src="picture/picB6.png"  height="260" src=""><div id="transparent"> [美妝]Innisfree 全球唯一霧感氣墊粉餅 打造12小時霧感持久妝容!! innisfree  LINE FRIENDS聯名，LINE迷必敗!!</div></a></div>
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" onClick ="iClick()"><a href="https://styleme.pixnet.net/post/199704730" target="_blank"><img src="picture/picB6.png"  height="260" src=""><div id="transparent"> [美妝]Innisfree 全球唯一霧感氣墊粉餅 打造12小時霧感持久妝容!! innisfree  LINE FRIENDS聯名，LINE迷必敗!!</div></a></div>
 	
-  <div id="article_block"><input type="image" class="button" src="locate.png"  alt="submit" id="LovButton2" ><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><a href="https://styleme.pixnet.net/products/1330" target="_blank"><img src="picture/picB7.png"  height="260" src=""><div id="transparent">innisfree 霧感持妝舒芙蕾粉餅</div></a></div>
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" onClick ="iClick()"><a href="https://styleme.pixnet.net/products/1330" target="_blank"><img src="picture/picB7.png"  height="260" src=""><div id="transparent">innisfree 霧感持妝舒芙蕾粉餅</div></a></div>
 	
-  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" >
-  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" ><a href="https://styleme.pixnet.net/post/198620989" target="_blank"><img src="picture/picB8.png"  height="260" src=""><div id="transparent">很實用！這7個氣墊粉餅的蕊芯和外盒Size都通用。想裝什麼就裝什麼</div></a></div>		
+  <div id="article_block"><input type="image" class="button" src="collect.png"  alt="submit" id="LovButton1" onclick='location.href="web/index.html"'>
+  	<input type="image" class="button" src="locate.png"  alt="submit" id="IButton" onClick ="iClick()"><a href="https://styleme.pixnet.net/post/198620989" target="_blank"><img src="picture/picB8.png"  height="260" src=""><div id="transparent">很實用！這7個氣墊粉餅的蕊芯和外盒Size都通用。想裝什麼就裝什麼</div></a></div>		
 </div>
 
 
