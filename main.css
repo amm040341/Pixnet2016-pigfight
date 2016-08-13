@@ -76,7 +76,6 @@
 	text-overflow: ellipsis;
 	
 }
-
 #store{
 	/*background-color:#DDFF77;*/
 	background-image: url('bgimg.png');
@@ -89,7 +88,20 @@
 
 }
 
+
 #storeBoard{
+	width: 485px;
+	height: 250px;
+	position:relative;
+}
+
+#storeBoard2{
+	width: 485px;
+	height: 250px;
+	position:relative;
+}
+
+#storeBoard3{
 	width: 485px;
 	height: 250px;
 	position:relative;
