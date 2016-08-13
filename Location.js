@@ -1,6 +1,7 @@
 var service;
 var map;
 var markers = [];
+var myLatlng;
 function getLocation()
   {
   if (navigator.geolocation)
@@ -20,7 +21,7 @@ function showPosition(position)
   initialize(lat,lng)  
   }
   function initialize(latitude,longitude) {
-        var myLatlng = new google.maps.LatLng(latitude,longitude);
+        myLatlng = new google.maps.LatLng(latitude,longitude);
         var mapOptions = {
           center: { lat: latitude, lng: longitude},
           zoom: 14
@@ -36,18 +37,6 @@ function showPosition(position)
             });
 		//標記地點
 		marker.setMap(map);
-		
-		var request = {
-    location: myLatlng,
-	bounds: map.getBounds(),
-    keyword: 'wastons',
-    radius: '1000'
-	//query:'7-11'
-	//query: 'Small three US-Japan'
-  };
-  service = new google.maps.places.PlacesService(map);
-  //service.textSearch(request, callback);
-  service.radarSearch(request, callback);
 
 
 
@@ -134,4 +123,32 @@ function showPosition(position)
       }));
     }
   }
+}
+function cClick()
+{
+	var request = {
+    location: myLatlng,
+	bounds: map.getBounds(),
+    keyword: '屈臣氏',
+    radius: '1000'
+	//query:'7-11'
+	//query: 'Small three US-Japan'
+  };
+  service = new google.maps.places.PlacesService(map);
+  //service.textSearch(request, callback);
+  service.radarSearch(request, callback);
+}
+function iClick()
+{
+	var request = {
+    location: myLatlng,
+	bounds: map.getBounds(),
+    keyword: 'innisfree',
+    radius: '1000'
+	//query:'7-11'
+	//query: 'Small three US-Japan'
+  };
+  service = new google.maps.places.PlacesService(map);
+  //service.textSearch(request, callback);
+  service.radarSearch(request, callback);
 }
