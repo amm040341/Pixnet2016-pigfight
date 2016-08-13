@@ -5,8 +5,9 @@
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <link rel=stylesheet type="text/css" href="main.css">
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWSAImRXejAli-yp9vUlo3LhcsBNezx_Q"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWSAImRXejAli-yp9vUlo3LhcsBNezx_Q&libraries=places"></script>
 <script src="Location.js"></script>
+<meta charset="UTF-8" />
 </header>
 
 <body>
@@ -278,7 +279,7 @@ $.ajax({
 </div>
 
 
-// <script >
+<!-- <script >
 var x=document.getElementById("demo");
 function getLocation()
   {
@@ -316,7 +317,7 @@ function showPosition(position)
 		//標記地點
 		marker.setMap(map);		
       }
- </script>
+ </script>-->
 
 <script type="text/javascript"><!--寶貝球js code-->
 		var mousex = 0;
